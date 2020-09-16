@@ -46,6 +46,22 @@ h1 {
     margin: 20px 0;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #727272;
+    margin-bottom: 55px;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #001A4F;
+    margin-bottom: 10px;
+}
+
 h4 {
     font-size: 13px;
     text-transform: uppercase;
@@ -63,7 +79,7 @@ p {
     margin: auto;
 }
 
-.container {
+.container::after {
     content: "";
     display: table;
     clear: both;
@@ -196,7 +212,6 @@ header a.button:hover {
 /* HEADER section inizio */
 /* -------------------------------- */
 header section {
-    /* background-color: green; */
     padding: 60px 0 100px;
 }
 
@@ -211,5 +226,113 @@ header section .button {
 
 
 /* HEADER FINE */
+/* -------------------------------- */
+/* -------------------------------- */
+
+/* MAIN INIZIO */
+/* -------------------------------- */
+/* -------------------------------- */
+main section > .container {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main p {
+    color: #737373;
+}
+
+/* MAIN section methods */
+/* -------------------------------- */
+.learning-method {
+    padding: 50px 0;
+    margin: 50px 0;
+}
+
+.method-img {
+    width: 50%;
+    float: left;
+}
+
+.method-img img {
+    width: 100%;
+}
+
+.method-description {
+    width: 50%;
+    float: left;
+    padding-right: 100px;
+}
+
+.method-description h2 span {
+    color: #64DE82;
+}
+
+.method-description p {
+    line-height: 1.5;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.method-description p:last-of-type {
+    border-bottom: none;
+}
+
+/* MAIN section tools */
+/* -------------------------------- */
+.tools {
+    padding: 50px 0;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.tools .container {
+    text-align: center;
+    padding: 0 80px;
+}
+
+.tools .tool-box-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tools .tool-box {
+    width: calc(100% / 3);
+    padding: 0 10px;
+    float: left;
+}
+
+.tools .tool-box img {
+    margin-bottom: 15px;
+}
+
+/* MAIN section app-mobile */
+/* -------------------------------- */
+.app-mobile .container {
+    /* padding: 50px 0;
+    margin: 50px 0; */
+    height: 200px;
+    background-color: purple;
+}
+/* MAIN section platform */
+/* -------------------------------- */
+.platform .container {
+    /* padding: 50px 0;
+    margin: 50px 0; */
+    height: 200px;
+    background-color: grey;
+}
+/* MAIN section study-plan */
+/* -------------------------------- */
+.study-plan .container {
+    /* padding: 50px 0;
+    margin: 50px 0; */
+    height: 200px;
+    background-color: green;
+}
+
+/* MAIN FINE */
 /* -------------------------------- */
 /* -------------------------------- */
