@@ -39,6 +39,25 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
 .container {
     width: 1100px;
     margin: auto;
@@ -127,6 +146,21 @@ header a.button:hover {
 #header-menu ul a {
     padding: 0 10px;
     margin-right: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+#header-menu li.current-item a::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #64DE82;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -1;
 }
 
 /* HEADER nav: header-buttons */
@@ -162,9 +196,19 @@ header a.button:hover {
 /* HEADER section inizio */
 /* -------------------------------- */
 header section {
-    height: 500px;
-    background-color: green;
+    /* background-color: green; */
+    padding: 60px 0 100px;
 }
+
+header section .content {
+    width: 560px;
+}
+
+header section .button {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
 
 /* HEADER FINE */
 /* -------------------------------- */
