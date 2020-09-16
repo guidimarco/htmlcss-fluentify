@@ -1,0 +1,171 @@
+/* REGOLE DI RESET NORMALIZZAZIONE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BODY */
+/* -------------------------------- */
+/* -------------------------------- */
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.container {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown::after {
+    content: " \f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+}
+
+.button {
+    background-color: #64DE82;
+    color: #337142;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    /* width: 170px; */
+}
+
+.button:hover {
+    color: #fff;
+}
+
+/* HEADER INIZIO */
+/* -------------------------------- */
+/* -------------------------------- */
+header {
+    background-image: url(https://www.fluentify.com/home/wp-content/uploads/2020/01/fluentify-cover-privati-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.overlay {
+    background: linear-gradient(270deg, transparent 0%, #001A4F 100%);
+}
+
+/* HEADER nav inizio */
+/* -------------------------------- */
+header nav {
+    font-size: 13px;
+}
+
+header a {
+    text-transform: uppercase;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+header a.button:hover {
+    opacity: 1;
+}
+
+/* HEADER nav: header-menu */
+#header-menu {
+    width: 70%;
+    height: 80px;
+    float: left;
+}
+
+#header-menu .logo {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 80px;
+}
+
+.logo img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#header-menu ul {
+    line-height: 40px;
+    padding: 20px 0;
+}
+
+#header-menu ul a {
+    padding: 0 10px;
+    margin-right: 5px;
+}
+
+/* HEADER nav: header-buttons */
+#header-buttons {
+    width: 30%;
+    height: 80px;
+    text-align: right;
+    float: left;
+}
+
+#header-buttons ul {
+    padding: 24px 0;
+}
+
+#header-buttons ul a {
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+#log-in-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    /* width: 170px; */
+}
+
+#log-in-button:hover {
+    background-color: #fff;
+    color: #001A4F;
+}
+
+/* HEADER section inizio */
+/* -------------------------------- */
+header section {
+    height: 500px;
+    background-color: green;
+}
+
+/* HEADER FINE */
+/* -------------------------------- */
+/* -------------------------------- */
