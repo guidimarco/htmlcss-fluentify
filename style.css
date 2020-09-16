@@ -310,20 +310,69 @@ main p {
 
 /* MAIN section app-mobile */
 /* -------------------------------- */
-.app-mobile .container {
-    /* padding: 50px 0;
-    margin: 50px 0; */
-    height: 200px;
-    background-color: purple;
+.app-mobile {
+    background-color: #011B50;
 }
+
+.app-mobile .container {
+    padding: 0 80px;
+}
+
+.app-mobile .app-content {
+    padding: 40px 0;
+    width: 50%;
+    float: left;
+}
+
+.app-content h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.app-content p {
+    color: white;
+}
+
+.app-content a {
+    color: #64DE82;
+    font-weight: bold;
+}
+
+.app-content a:hover {
+    opacity: 0.7;
+}
+
+.app-mobile .app-img {
+    width: 50%;
+    padding-left: 100px;
+    float: left;
+}
+
+.app-img img {
+    height: 269px;
+    float: left;
+}
+
 /* MAIN section platform */
 /* -------------------------------- */
 .platform .container {
-    /* padding: 50px 0;
-    margin: 50px 0; */
-    height: 200px;
-    background-color: grey;
+    padding: 50px 80px;
 }
+
+.platform .platform-img {
+    width: 50%;
+    float: left;
+}
+
+.platform-img img {
+    height: 344px;
+}
+
+.platform .platform-content {
+    width: 50%;
+    float: left;
+}
+
 /* MAIN section study-plan */
 /* -------------------------------- */
 .study-plan .container {
