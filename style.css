@@ -27,6 +27,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    opacity: 0.7;
+}
+
 /* BODY */
 /* -------------------------------- */
 /* -------------------------------- */
@@ -126,10 +130,6 @@ header nav {
 
 header a {
     text-transform: uppercase;
-}
-
-header a:hover {
-    opacity: 0.7;
 }
 
 header a.button:hover {
@@ -338,10 +338,6 @@ main p {
     font-weight: bold;
 }
 
-.app-content a:hover {
-    opacity: 0.7;
-}
-
 .app-mobile img {
     display: block;
     height: 343px;
@@ -419,40 +415,100 @@ main p {
 /* -------------------------------- */
 /* -------------------------------- */
 footer {
-    height: 200px;
     background-color: #001A4F;
+    padding: 60px 0 80px;
+    font-size: 14.5px;
     color: #fff;
+}
+
+footer p {
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+footer a:hover {
+    color: #64DE82;
 }
 
 .container-footer {
     width: 1400px;
-    height: 200px;
     margin: auto;
 }
 
+.container-footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .company-info {
-    width: 250px;
-    height: 200px;
-    background-color: red;
+    width: 240px;
+    padding-right: 50px;
     float: left;
+}
+
+.company-info .logo {
+    margin-bottom: 60px;
+}
+
+#company-mail {
+    margin: 20px 0;
+}
+
+.footer-social a {
+    color: #64DE82;
+    margin-right: 20px;
+}
+
+.footer-social a:hover {
+    opacity: 0.6;
 }
 
 footer nav {
     width: calc(100% - 250px);
     height: 200px;
-    background-color: green;
     float: left;
 }
 
-nav .footer-menu {
-    height: 100px;
-    background-color: yellow;
+.footer-menu ul {
+    width: 100%;
 }
 
-nav .copy {
-    height: 100px;
-    background-color: pink;
+.footer-menu > ul > li {
+    width: calc(100% / 6);
+    padding: 0 15px;
 }
+
+.footer-menu > ul > li > a {
+    margin-bottom: 10px;
+}
+
+.footer-menu > ul > li > a:hover {
+    color: white;
+}
+
+.footer-menu li li {
+    float: none;
+    line-height: 1.5;
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+footer .copy {
+    height: 100px;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid white;
+}
+
+footer .copy ul {
+}
+
+footer .copy ul li {
+    margin-right: 50px;
+}
+
 
 
 /* FOOTER FINE */
