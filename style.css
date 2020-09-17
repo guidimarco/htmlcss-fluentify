@@ -155,6 +155,10 @@ header a.button:hover {
     margin-right: 10px;
 }
 
+.logo a:hover {
+    opacity: 1;
+}
+
 #header-menu ul {
     line-height: 40px;
     padding: 20px 0;
@@ -180,6 +184,53 @@ header a.button:hover {
     z-index: -1;
 }
 
+/* menu a tendina nascosto */
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu div.dropdown-list {
+    display: none;
+    text-transform: uppercase;
+    background-color: #001A4F;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-list::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #001A4F;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+#header-menu .dropdown-menu div.dropdown-list ul {
+    /* line-height: 40px; */
+    padding: 0;
+}
+
+.dropdown-menu div.dropdown-list ul li {
+    float: none;
+    padding: 2px 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-menu div.dropdown-list ul li:first-of-type {
+    border-top: none;
+}
+
+.dropdown-menu:hover div.dropdown-list {
+    display: block;
+    width: max-content;
+}
+
 /* HEADER nav: header-buttons */
 #header-buttons {
     width: 30%;
@@ -190,6 +241,21 @@ header a.button:hover {
 
 #header-buttons ul {
     padding: 24px 0;
+}
+
+#header-buttons .dropdown-menu div.dropdown-list {
+    margin-top: 10px;
+}
+
+#header-buttons .dropdown-menu div.dropdown-list ul {
+    /* line-height: 40px; */
+    padding: 0;
+    text-align: left;
+}
+
+#header-buttons .dropdown-menu div.dropdown-list ul li {
+    /* line-height: 40px; */
+    padding: 5px;
 }
 
 #header-buttons ul a {
@@ -257,9 +323,9 @@ main p {
     right: 50%;
     top: 50%;
     transform: translateY(-50%);
-    width: 690px;
+    max-width: 620px;
     float: right;
-    height: 690px;
+    max-height: 620px;
     margin-right: 15px;
 }
 
@@ -432,7 +498,7 @@ footer a:hover {
 }
 
 .container-footer {
-    width: 1400px;
+    width: 1300px;
     margin: auto;
 }
 
@@ -480,12 +546,13 @@ footer nav {
     padding: 0 15px;
 }
 
-.footer-menu > ul > li > a {
+.footer-menu > ul > li > span {
     margin-bottom: 10px;
 }
 
-.footer-menu > ul > li > a:hover {
+.footer-menu > ul > li > span:hover {
     color: white;
+    opacity: 0.7;
 }
 
 .footer-menu li li {
